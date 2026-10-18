@@ -15,6 +15,19 @@
 <meta property="og:title" content="Jackson Mejia">
 <meta property="og:description" content="Assistant Professor of Economics, School of Civic Leadership, University of Texas at Austin.">
 <meta property="og:url" content="https://www.jacksonmejia.com/">
+<link rel="canonical" href="https://www.jacksonmejia.com/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://www.jacksonmejia.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Jackson Mejia, Assistant Professor of Economics, University of Texas at Austin">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Jackson Mejia">
+<meta name="twitter:description" content="Assistant Professor of Economics, School of Civic Leadership, University of Texas at Austin.">
+<meta name="twitter:image" content="https://www.jacksonmejia.com/og-image.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
@@ -61,6 +74,7 @@
   main {
     border-left: 1px solid var(--line);
     padding-left: 4rem;
+    padding-top: 0.45rem; /* aligns first heading's baseline with the name */
   }
   a {
     color: inherit;
@@ -72,9 +86,9 @@
   a:hover { color: var(--green); text-decoration-color: var(--green); }
   a:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; border-radius: 2px; }
   h1, h2 { margin: 0; color: var(--green); }
-  h1, h2 { font-weight: 400; font-size: 2.15rem; line-height: 1.05; }
-  h1 { margin-bottom: 0.8rem; }
-  h2 { margin-bottom: 0.8rem; }
+  h1, h2 { font-weight: 400; line-height: 1.05; }
+  h1 { font-size: 2.15rem; margin-bottom: 0.8rem; }
+  h2 { font-size: 1.6rem; margin-bottom: 0.75rem; }
   p { margin: 0; }
   .role { color: var(--muted); }
   .bio { margin-top: 1.5rem; }
@@ -83,10 +97,11 @@
   ul.items { list-style: none; margin: 0; padding: 0; }
   ul.items li + li { margin-top: 1.1rem; }
   .meta { color: var(--muted); display: flex; flex-wrap: wrap; column-gap: 0.9rem; }
+  .links { display: inline-flex; gap: 0.9rem; white-space: nowrap; }
   @media (max-width: 52rem) {
     .page { grid-template-columns: 1fr; padding-top: 4rem; }
     aside { position: static; margin-bottom: 3.5rem; }
-    main { border-left: 0; padding-left: 0; }
+    main { border-left: 0; padding-left: 0; padding-top: 0; }
   }
 </style>
 </head>
@@ -111,31 +126,39 @@
         <li>
           Tax Policy and Capital Maintenance
           <div class="meta">
-            <a href="/staticfiles/maintenance_demand.pdf">PDF</a>
-            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5653250">SSRN</a>
+            <span class="links">
+              <a href="/staticfiles/maintenance_demand.pdf">PDF</a>
+              <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5653250">SSRN</a>
+            </span>
           </div>
         </li>
         <li>
           Ramsey Alignment and the Postwar Tax System
           <div class="meta">
-            <a href="/staticfiles/mvpfs_ge.pdf">PDF</a>
-            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6150628">SSRN</a>
+            <span class="links">
+              <a href="/staticfiles/mvpfs_ge.pdf">PDF</a>
+              <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6150628">SSRN</a>
+            </span>
           </div>
         </li>
         <li>
           Tax Incidence with Endogenous Exit
           <div class="meta">
-            <span>Revise and resubmit, AEJ: Economic Policy</span>
-            <a href="/staticfiles/tiee.pdf">PDF</a>
-            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5653130">SSRN</a>
+            <span>Revise and resubmit, <i>AEJ: Economic Policy</i></span>
+            <span class="links">
+              <a href="/staticfiles/tiee.pdf">PDF</a>
+              <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5653130">SSRN</a>
+            </span>
           </div>
         </li>
         <li>
           Taxation and Reallocation in the Secondary Market for Capital Goods
           <div class="meta">
             <span>Major revision in progress</span>
-            <a href="/staticfiles/used_capital.pdf">PDF</a>
-            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7239858">SSRN</a>
+            <span class="links">
+              <a href="/staticfiles/used_capital.pdf">PDF</a>
+              <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7239858">SSRN</a>
+            </span>
           </div>
         </li>
       </ul>
@@ -150,7 +173,7 @@
           <div class="meta">with Andrew C. Johnston and Nathaniel Winik</div>
         </li>
         <li>
-          Inflation Expectations, Investment, and the Mundell-Tobin Financing Channel
+          Inflation Expectations, Investment, and the Mundell–Tobin Financing Channel
           <div class="meta">with Giuditta Perinelli and Alex Tagliabracci</div>
         </li>
       </ul>
@@ -163,7 +186,9 @@
           On Price Stability with a Job Guarantee
           <div class="meta">
             <span>with Brian C. Albrecht, <i>Contemporary Economic Policy</i>, 2022</span>
-            <a href="/staticfiles/Mejia_Albrecht_MMT.pdf">PDF</a>
+            <span class="links">
+              <a href="/staticfiles/Mejia_Albrecht_MMT.pdf">PDF</a>
+            </span>
           </div>
         </li>
       </ul>
@@ -175,29 +200,37 @@
         <li>
           Effects of Stablecoin Yield Prohibition on Bank Lending
           <div class="meta">
-            <span>2026</span>
-            <a href="https://www.whitehouse.gov/research/2026/04/effects-of-stablecoin-yield-prohibition-on-bank-lending/">Link</a>
+            <span>Council of Economic Advisers, 2026</span>
+            <span class="links">
+              <a href="https://www.whitehouse.gov/research/2026/04/effects-of-stablecoin-yield-prohibition-on-bank-lending/">Web</a>
+            </span>
           </div>
         </li>
         <li>
           Unlocking Retail Access to Private Equity Investments through Defined Contribution Plans
           <div class="meta">
             <span>Economic Report of the President, 2026, Chapter 12</span>
-            <a href="https://www.whitehouse.gov/wp-content/uploads/2026/04/ERP-2026-12.-Unlocking-Retail-Access-to-Private-Equity-Investments-through-Defined-Contribution-Plans.pdf">PDF</a>
+            <span class="links">
+              <a href="https://www.whitehouse.gov/wp-content/uploads/2026/04/ERP-2026-12.-Unlocking-Retail-Access-to-Private-Equity-Investments-through-Defined-Contribution-Plans.pdf">PDF</a>
+            </span>
           </div>
         </li>
         <li>
           The Cost of Capital Misallocation to ESG
           <div class="meta">
             <span>Economic Report of the President, 2026, Chapter 13</span>
-            <a href="https://www.whitehouse.gov/wp-content/uploads/2026/04/ERP-2026-13.-The-Cost-of-Capital-Misallocation-to-ESG-Investments-with-an-Environmental-Focus.pdf">PDF</a>
+            <span class="links">
+              <a href="https://www.whitehouse.gov/wp-content/uploads/2026/04/ERP-2026-13.-The-Cost-of-Capital-Misallocation-to-ESG-Investments-with-an-Environmental-Focus.pdf">PDF</a>
+            </span>
           </div>
         </li>
         <li>
           Retail Access to Alternative Investments via Defined Contribution Plans
           <div class="meta">
-            <span>2025</span>
-            <a href="https://www.whitehouse.gov/research/2025/08/retail-access-to-alternative-investments-via-defined-contribution-plans/">Link</a>
+            <span>Council of Economic Advisers, 2025</span>
+            <span class="links">
+              <a href="https://www.whitehouse.gov/research/2025/08/retail-access-to-alternative-investments-via-defined-contribution-plans/">Web</a>
+            </span>
           </div>
         </li>
       </ul>
@@ -210,9 +243,11 @@
           Smooth Panel Local Projections
           <div class="meta">
             <span>with Jonathan S. Hartley</span>
-            <a href="/staticfiles/splp.pdf">PDF</a>
-            <a href="https://github.com/jackson-mejia/splp">R package</a>
-            <a href="/staticfiles/splp_vignette.pdf">Vignette</a>
+            <span class="links">
+              <a href="/staticfiles/splp.pdf">PDF</a>
+              <a href="https://github.com/jackson-mejia/splp">R package</a>
+              <a href="/staticfiles/splp_vignette.pdf">Vignette</a>
+            </span>
           </div>
         </li>
       </ul>
